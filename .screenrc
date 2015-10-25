@@ -1,0 +1,9 @@
+attrcolor b ".I"
+termcapinfo xterm 'Co#256:AB\E[48;5;%dm:AF=\E[38;5;%dm'
+defbce on
+hardstatus alwayslastline
+hardstatus string "%{= kb}[ %=%{w}%?%-Lw%?%{C}(%{W}%n*%f %t%?(%u)%?%{C})%{w}%?%+Lw%?%?%= %{b}][%{C} %Y.%m.%d %{W}%0c     %{b}]"
+startup_message off
+escape ``
+bindkey -k k3 focus top
+bindkey -k k4 focus bottom
