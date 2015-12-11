@@ -1,3 +1,9 @@
+
 # Components I like to add to .bashrc w/o overrighting other customizations
 LD_LIBRARY_PATH="/usr/local/lib"
 PATH=$PATH:/usr/local/lib
+
+# Add local bin directory, if it exists
+if [ -d "$HOME/bin" ] ; then
+  PATH="$HOME/bin:$PATH"
+fi
