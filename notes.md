@@ -27,3 +27,7 @@ def get_ip():
  feed = aio.feeds('mypis')
  aio.send(feed.key, "{} is at {}".format(socket.gethostname(), get_ip()))
 '''
+
+# CIFS mount not mounted?
+
+See [this solution](https://raspberrypi.stackexchange.com/q/34444)
