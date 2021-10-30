@@ -26,7 +26,7 @@ def get_ip():
  aio = Client(secrets['AIOUSER'], secrets['AIOKEY'])
  feed = aio.feeds('mypis')
  aio.send(feed.key, "{} is at {}".format(socket.gethostname(), get_ip()))
-'''
+```
 
 # CIFS mount not mounted?
 
