@@ -31,3 +31,19 @@ def get_ip():
 # CIFS mount not mounted?
 
 See [this solution](https://raspberrypi.stackexchange.com/q/34444)
+
+# Samba
+
+1. Install with `sudo apt install samba samba-common-bin`
+2. add a user space, e.g.
+
+```
+[PiUser]
+path = /home/pi
+browseable = yes
+read only = no
+```
+
+3. Create a password with `sudo smbpasswd -a pi`
+4. Enable user with `sudo smbpasswd -e pi`
+5. Restart with `sudo systemctl restart smbd`
