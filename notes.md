@@ -4,7 +4,7 @@ A place to store tidbits of information so I don't lose them.
 
 # What's my IP?
 
-Set crontab `1 3 * * * python3 aiopilog.py` with `aiopilog.py`
+Set crontab `1 3 * * * sleep 30 && python3 aiopilog.py` with `aiopilog.py`
 
 ```
 import socket
@@ -27,6 +27,7 @@ def get_ip():
  feed = aio.feeds('mypis')
  aio.send(feed.key, "{} is at {}".format(socket.gethostname(), get_ip()))
 ```
+Note: the sleep may be needed to ensure network connectivity before the aio data send.
 
 # CIFS mount not mounted?
 
