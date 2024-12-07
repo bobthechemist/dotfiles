@@ -35,7 +35,7 @@ See [this solution](https://raspberrypi.stackexchange.com/q/34444)
 # Samba
 
 1. Install with `sudo apt install samba samba-common-bin`
-2. add a user space, e.g.
+2. add a user space to `/etc/samba/smb.conf`, e.g.
 
 ```
 [PiUser]
